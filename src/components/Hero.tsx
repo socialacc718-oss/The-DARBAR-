@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, UtensilsCrossed, Clock, ShieldCheck, Flame } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/menu';
+import heroFeastImg from '../assets/images/hero_darbaar_feast_1790353192841.jpg';
 
 export const Hero: React.FC = () => {
   return (
@@ -79,7 +80,7 @@ export const Hero: React.FC = () => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-[#473722] shadow-2xl shadow-black/80 group">
               <img
-                src="/src/assets/images/hero_darbaar_feast_1790353192841.jpg"
+                src={heroFeastImg}
                 alt="The Darbaar Royal Desi Feast with Biryani, BBQ, and Karahi"
                 className="w-full h-auto object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-700 ease-out"
                 referrerPolicy="no-referrer"

@@ -1,6 +1,9 @@
 import React from 'react';
 import { Utensils, Users, Heart, Sparkles, Phone } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/menu';
+import biryaniSpecialImg from '../assets/images/biryani_darbaar_special_1790353206581.jpg';
+import bbqKarahiImg from '../assets/images/bbq_karahi_darbaar_1790353218118.jpg';
+import parathaRollsImg from '../assets/images/paratha_rolls_darbaar_1790353229402.jpg';
 
 export const StorySection: React.FC = () => {
   return (
@@ -48,7 +51,7 @@ export const StorySection: React.FC = () => {
           <div className="bg-[#12141b] rounded-xl overflow-hidden border border-[#2b2417] group hover:border-amber-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-black/70">
             <div className="relative aspect-[4/3] overflow-hidden">
               <img
-                src="/src/assets/images/biryani_darbaar_special_1790353206581.jpg"
+                src={biryaniSpecialImg}
                 alt="Darbaari Special Biryani in Traditional Brass Handi"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
@@ -78,7 +81,7 @@ export const StorySection: React.FC = () => {
           <div className="bg-[#12141b] rounded-xl overflow-hidden border border-[#2b2417] group hover:border-amber-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-black/70">
             <div className="relative aspect-[4/3] overflow-hidden">
               <img
-                src="/src/assets/images/bbq_karahi_darbaar_1790353218118.jpg"
+                src={bbqKarahiImg}
                 alt="Sizzling Charcoal BBQ and Chicken Karahi"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
@@ -108,7 +111,7 @@ export const StorySection: React.FC = () => {
           <div className="bg-[#12141b] rounded-xl overflow-hidden border border-[#2b2417] group hover:border-amber-500/50 transition-all duration-300 hover:shadow-xl hover:shadow-black/70">
             <div className="relative aspect-[4/3] overflow-hidden">
               <img
-                src="/src/assets/images/paratha_rolls_darbaar_1790353229402.jpg"
+                src={parathaRollsImg}
                 alt="Golden Crispy Paratha Rolls with Garlic Mayo"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"

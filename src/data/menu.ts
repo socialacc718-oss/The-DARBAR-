@@ -1,3 +1,13 @@
+import heroFeastImg from '../assets/images/hero_darbaar_feast_1790353192841.jpg';
+import biryaniSpecialImg from '../assets/images/biryani_darbaar_special_1790353206581.jpg';
+import bbqKarahiImg from '../assets/images/bbq_karahi_darbaar_1790353218118.jpg';
+import parathaRollsImg from '../assets/images/paratha_rolls_darbaar_1790353229402.jpg';
+import biryaniPlateImg from '../assets/images/biryani_plate_clean_1790353778941.jpg';
+import tikkaBotiImg from '../assets/images/tikka_boti_clean_1790353794778.jpg';
+import karahiWokImg from '../assets/images/karahi_wok_clean_1790353811178.jpg';
+import parathaRollCleanImg from '../assets/images/paratha_roll_clean_1790353826068.jpg';
+import teaDrinksImg from '../assets/images/tea_drinks_clean_1790353841204.jpg';
+
 export interface MenuItemVariant {
   label: string;
   price: number;
@@ -39,18 +49,18 @@ export const CATEGORIES: CategoryInfo[] = [
 ];
 
 export const CATEGORY_DEFAULT_IMAGES: Record<string, string> = {
-  biryani: '/src/assets/images/biryani_plate_clean_1790353778941.jpg',
-  bbq: '/src/assets/images/tikka_boti_clean_1790353794778.jpg',
-  karahi: '/src/assets/images/karahi_wok_clean_1790353811178.jpg',
-  handi: '/src/assets/images/karahi_wok_clean_1790353811178.jpg',
-  rolls: '/src/assets/images/paratha_roll_clean_1790353826068.jpg',
-  paratha: '/src/assets/images/paratha_roll_clean_1790353826068.jpg',
-  starters: '/src/assets/images/tikka_boti_clean_1790353794778.jpg',
-  light: '/src/assets/images/karahi_wok_clean_1790353811178.jpg',
-  'cold-drinks': '/src/assets/images/tea_drinks_clean_1790353841204.jpg',
-  'hot-drinks': '/src/assets/images/tea_drinks_clean_1790353841204.jpg',
-  sides: '/src/assets/images/biryani_darbaar_special_1790353206581.jpg',
-  deals: '/src/assets/images/hero_darbaar_feast_1790353192841.jpg',
+  biryani: biryaniPlateImg,
+  bbq: tikkaBotiImg,
+  karahi: karahiWokImg,
+  handi: karahiWokImg,
+  rolls: parathaRollCleanImg,
+  paratha: parathaRollCleanImg,
+  starters: tikkaBotiImg,
+  light: karahiWokImg,
+  'cold-drinks': teaDrinksImg,
+  'hot-drinks': teaDrinksImg,
+  sides: biryaniSpecialImg,
+  deals: heroFeastImg,
 };
 
 export const MENU_ITEMS: MenuItem[] = [
