@@ -1,0 +1,6 @@
+{
+  "name": "The Darbaar - Authentic Desi Cuisine",
+  "description": "Royal Desi Dining & Online Ordering for The Darbaar. Savor authentic Biryani, BBQ, Karahi, Handi, Paratha Rolls, and exclusive deals with instant WhatsApp ordering and slip generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
