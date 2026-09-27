@@ -21,7 +21,7 @@ export default function App() {
 
   return (
     <CartProvider>
-      <div className="min-h-screen bg-[#0b0c10] text-slate-100 flex flex-col font-sans selection:bg-amber-500 selection:text-black antialiased">
+      <div className="min-h-screen max-w-[100vw] overflow-x-hidden bg-[#0b0c10] text-slate-100 flex flex-col font-sans selection:bg-amber-500 selection:text-black antialiased">
         {/* Responsive Sticky Header with Category Links and prominent 'Order Now' button */}
         <Navbar
           activeCategory={activeCategory}

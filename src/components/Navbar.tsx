@@ -52,36 +52,36 @@ export const Navbar: React.FC<StickyNavbarProps> = ({ activeCategory, onSelectCa
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-[#0d0f14]/98 backdrop-blur-md border-b border-[#2d2417] shadow-xl">
+    <header className="sticky top-0 z-40 bg-[#0d0f14]/98 backdrop-blur-md border-b border-[#2d2417] shadow-xl w-full">
       {/* Top micro bar for announcements */}
-      <div className="bg-[#17120a] border-b border-[#352514] text-amber-300 text-xs px-3 sm:px-4 py-1.5 flex items-center justify-between">
-        <div className="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
-          <span className="font-urdu text-sm hidden sm:inline">دیسی ذائقہ ، شاہی انداز</span>
-          <span className="hidden sm:inline text-amber-700">·</span>
-          <span className="font-medium text-[11px] sm:text-xs">
+      <div className="bg-[#17120a] border-b border-[#352514] text-amber-300 text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 flex items-center justify-between gap-2 overflow-hidden">
+        <div className="flex items-center gap-1.5 sm:gap-2 truncate min-w-0">
+          <span className="font-urdu text-xs sm:text-sm text-amber-400 shrink-0">دیسی ذائقہ</span>
+          <span className="text-amber-700/80">·</span>
+          <span className="font-medium truncate text-[10px] sm:text-xs text-amber-200">
             Free Delivery on orders above Rs. 2,000
           </span>
         </div>
-        <div className="flex items-center gap-3 shrink-0">
+        <div className="flex items-center gap-2 shrink-0">
           <a
             href={`tel:${RESTAURANT_INFO.phone}`}
-            className="hover:text-amber-200 transition-colors flex items-center gap-1 font-mono text-[11px] sm:text-xs"
+            className="hover:text-amber-200 transition-colors flex items-center gap-1 font-mono text-[10px] sm:text-xs text-amber-400"
           >
-            <Phone className="w-3 h-3 text-amber-400" />
-            <span>{RESTAURANT_INFO.phoneFormatted}</span>
+            <Phone className="w-3 h-3 text-amber-400 shrink-0" />
+            <span className="tracking-tight">{RESTAURANT_INFO.phoneFormatted}</span>
           </a>
         </div>
       </div>
 
       {/* Main Bar */}
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-3">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-20 flex items-center justify-between gap-2 sm:gap-3">
         {/* Brand / Logo */}
-        <a href="#" className="flex items-center gap-2.5 sm:gap-3 group shrink-0">
-          <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-lg bg-gradient-to-br from-amber-400 via-amber-600 to-amber-800 p-0.5 shadow-lg shadow-amber-950/40">
+        <a href="#" className="flex items-center gap-2 sm:gap-3 group shrink-0 min-w-0">
+          <div className="w-8 h-8 sm:w-11 sm:h-11 rounded-lg bg-gradient-to-br from-amber-400 via-amber-600 to-amber-800 p-0.5 shadow-md shadow-amber-950/40 shrink-0">
             <div className="w-full h-full bg-[#0d0f14] rounded-[7px] flex items-center justify-center">
               <svg
                 viewBox="0 0 24 24"
-                className="w-5 h-5 sm:w-6 sm:h-6 text-amber-400 group-hover:scale-105 transition-transform"
+                className="w-4 h-4 sm:w-6 sm:h-6 text-amber-400 group-hover:scale-105 transition-transform"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1.8"
@@ -92,11 +92,11 @@ export const Navbar: React.FC<StickyNavbarProps> = ({ activeCategory, onSelectCa
               </svg>
             </div>
           </div>
-          <div className="flex flex-col">
-            <span className="font-serif text-lg sm:text-2xl font-bold tracking-wider text-amber-200 uppercase">
+          <div className="flex flex-col min-w-0">
+            <span className="font-serif text-sm sm:text-2xl font-bold tracking-wider text-amber-200 uppercase truncate">
               The Darbaar
             </span>
-            <span className="font-urdu text-[11px] sm:text-xs text-amber-400/80 -mt-0.5 sm:-mt-1">
+            <span className="font-urdu text-[10px] sm:text-xs text-amber-400/80 -mt-0.5 sm:-mt-1 truncate">
               دربار · شاہی انداز
             </span>
           </div>
@@ -136,33 +136,33 @@ export const Navbar: React.FC<StickyNavbarProps> = ({ activeCategory, onSelectCa
           })}
         </nav>
 
-        {/* Action Controls: Prominent 'Order Now' button & Cart Button */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        {/* Action Controls: Order Now & Cart Button */}
+        <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
           {/* Prominent 'Order Now' button */}
           <button
             onClick={handleOrderNowClick}
-            className="bg-gradient-to-r from-red-600 via-amber-600 to-amber-500 hover:from-red-500 hover:to-amber-400 text-white font-extrabold px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-xl shadow-lg shadow-red-950/40 text-xs sm:text-sm uppercase tracking-wider flex items-center gap-1.5 transition-all hover:scale-105 active:scale-95"
+            className="bg-gradient-to-r from-red-600 via-amber-600 to-amber-500 hover:from-red-500 hover:to-amber-400 text-white font-extrabold px-2.5 sm:px-5 py-1.5 sm:py-2.5 rounded-lg sm:rounded-xl shadow-md shadow-red-950/40 text-[11px] sm:text-sm uppercase tracking-wide flex items-center gap-1 sm:gap-1.5 transition-all hover:scale-105 active:scale-95 whitespace-nowrap"
             aria-label="Order Now"
           >
-            <span className="w-2 h-2 rounded-full bg-white animate-ping" />
+            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-white animate-ping" />
             <span>Order Now</span>
           </button>
 
           {/* Cart Trigger */}
           <button
             onClick={() => setIsCartOpen(true)}
-            className="relative flex items-center gap-2 bg-[#1b1e2a] hover:bg-[#252a3a] border border-[#3e3223] text-amber-300 font-bold px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl transition-all"
+            className="relative flex items-center gap-1.5 sm:gap-2 bg-[#1b1e2a] hover:bg-[#252a3a] border border-[#3e3223] text-amber-300 font-bold px-2.5 sm:px-4 py-1.5 sm:py-2.5 rounded-lg sm:rounded-xl transition-all"
             aria-label="Shopping Cart"
           >
             <ShoppingBag className="w-4 h-4 text-amber-400" />
-            <span className="hidden sm:inline text-xs">Cart</span>
+            <span className="hidden md:inline text-xs">Cart</span>
             {totalItems > 0 && (
-              <span className="bg-amber-500 text-stone-950 text-xs px-2 py-0.5 rounded-full font-mono tabular-nums font-bold">
+              <span className="bg-amber-500 text-stone-950 text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.2 sm:py-0.5 rounded-full font-mono tabular-nums font-bold">
                 {totalItems}
               </span>
             )}
             {grandTotal > 0 && (
-              <span className="hidden md:inline text-xs font-mono font-bold text-amber-300 border-l border-[#3a2f20] pl-2 tabular-nums">
+              <span className="hidden xl:inline text-xs font-mono font-bold text-amber-300 border-l border-[#3a2f20] pl-2 tabular-nums">
                 Rs. {grandTotal.toLocaleString()}
               </span>
             )}
@@ -171,19 +171,19 @@ export const Navbar: React.FC<StickyNavbarProps> = ({ activeCategory, onSelectCa
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800"
+            className="lg:hidden p-1.5 sm:p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800"
             aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? <X className="w-5 h-5 sm:w-6 sm:h-6" /> : <Menu className="w-5 h-5 sm:w-6 sm:h-6" />}
           </button>
         </div>
       </div>
 
       {/* Horizontal Sub-Bar for Quick Category Scrolling (Visible on Mobile & Tablet) */}
-      <div className="lg:hidden bg-[#0a0c10] border-t border-[#231b12] px-3 py-2 flex items-center gap-2 overflow-x-auto scrollbar-none">
+      <div className="lg:hidden bg-[#0a0c10] border-t border-[#231b12] px-2 sm:px-3 py-1.5 flex items-center gap-1.5 overflow-x-auto scrollbar-none max-w-full">
         <button
           onClick={() => handleCategoryClick('deals')}
-          className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap shrink-0 flex items-center gap-1.5 ${
+          className={`px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg text-[11px] sm:text-xs font-semibold whitespace-nowrap shrink-0 flex items-center gap-1 ${
             activeCategory === 'deals'
               ? 'bg-amber-500 text-stone-950 font-bold'
               : 'bg-[#151722] text-slate-300 border border-[#2b2216]'
@@ -199,7 +199,7 @@ export const Navbar: React.FC<StickyNavbarProps> = ({ activeCategory, onSelectCa
             <button
               key={cat.id}
               onClick={() => handleCategoryClick(cat.id)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap shrink-0 flex items-center gap-1.5 ${
+              className={`px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg text-[11px] sm:text-xs font-semibold whitespace-nowrap shrink-0 flex items-center gap-1 ${
                 isActive
                   ? 'bg-amber-500 text-stone-950 font-bold'
                   : 'bg-[#151722] text-slate-300 border border-[#2b2216]'

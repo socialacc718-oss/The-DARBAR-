@@ -86,10 +86,10 @@ export const DealsSection: React.FC = () => {
                 <div className="pt-4 border-t border-[#261f15] mt-4">
                   <button
                     onClick={() => addToCart(deal)}
-                    className="w-full flex items-center justify-center gap-2 bg-[#221a11] hover:bg-amber-500 text-amber-300 hover:text-stone-950 border border-amber-600/40 hover:border-amber-500 py-2.5 px-4 rounded-lg font-semibold text-sm transition-all active:scale-[0.98]"
+                    className="w-full flex items-center justify-center gap-1.5 sm:gap-2 bg-[#221a11] hover:bg-amber-500 text-amber-300 hover:text-stone-950 border border-amber-600/40 hover:border-amber-500 py-2 sm:py-2.5 px-3 rounded-lg font-semibold text-xs sm:text-sm transition-all active:scale-[0.98] text-center"
                   >
-                    <Plus className="w-4 h-4" />
-                    <span>Add {deal.name} to Order</span>
+                    <Plus className="w-4 h-4 shrink-0 text-amber-400" />
+                    <span className="truncate">Add to Order · Rs. {deal.price?.toLocaleString()}</span>
                   </button>
                 </div>
               </div>
