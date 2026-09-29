@@ -54,20 +54,18 @@ export const Navbar: React.FC<StickyNavbarProps> = ({ activeCategory, onSelectCa
   return (
     <header className="sticky top-0 z-40 bg-[#0d0f14]/98 backdrop-blur-md border-b border-[#2d2417] shadow-xl w-full">
       {/* Top micro bar for announcements */}
-      <div className="bg-[#17120a] border-b border-[#352514] text-amber-300 text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 flex items-center justify-between gap-2 overflow-hidden">
-        <div className="flex items-center gap-1.5 sm:gap-2 truncate min-w-0">
-          <span className="font-urdu text-xs sm:text-sm text-amber-400 shrink-0">دیسی ذائقہ</span>
-          <span className="text-amber-700/80">·</span>
-          <span className="font-medium truncate text-[10px] sm:text-xs text-amber-200">
-            Free Delivery on orders above Rs. 2,000
+      <div className="bg-[#17120a] border-b border-[#352514] text-amber-300 text-[10px] sm:text-xs px-2.5 sm:px-4 py-1.5 flex items-center justify-between gap-1 sm:gap-2">
+        <div className="flex items-center gap-1.5 min-w-0 flex-1 overflow-hidden">
+          <span className="font-medium truncate text-amber-200">
+            🚚 Free Delivery on orders &gt; Rs. 2,000
           </span>
         </div>
-        <div className="flex items-center gap-2 shrink-0">
+        <div className="shrink-0">
           <a
             href={`tel:${RESTAURANT_INFO.phone}`}
-            className="hover:text-amber-200 transition-colors flex items-center gap-1 font-mono text-[10px] sm:text-xs text-amber-400"
+            className="hover:text-amber-200 transition-colors flex items-center gap-1 font-mono text-[10px] sm:text-xs text-amber-400 bg-[#251a0e] px-2 py-0.5 rounded border border-[#44301a]"
           >
-            <Phone className="w-3 h-3 text-amber-400 shrink-0" />
+            <Phone className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-amber-400 shrink-0" />
             <span className="tracking-tight">{RESTAURANT_INFO.phoneFormatted}</span>
           </a>
         </div>

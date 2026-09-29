@@ -59,10 +59,10 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Value badges: Clean typography without pill badges */}
-            <div className="pt-4 grid grid-cols-3 gap-3 border-t border-[#261f15] text-slate-400 text-xs sm:text-sm">
+            <div className="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 border-t border-[#261f15] text-slate-400 text-xs sm:text-sm">
               <div className="flex items-center gap-2">
                 <Flame className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>Live BBQ & Handi</span>
+                <span>Live BBQ &amp; Handi</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-amber-400 shrink-0" />
@@ -70,7 +70,7 @@ export const Hero: React.FC = () => {
               </div>
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>100% Fresh & Halal</span>
+                <span>100% Fresh &amp; Halal</span>
               </div>
             </div>
 
